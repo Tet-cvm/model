@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <style>
+    #animation,
+    #wolf {
+      width: 750px;
+      height: 1000px;
+      background: #000;
+    }
+  </style>
+  <body>
+    <div id="animation"></div>
+    <!-- <div id="wolf"></div> -->
+    <script src="./lottie.min.js"></script>
+    <script>
+      var a = bodymovin.loadAnimation({
+        path: 'data.json', //json文件路径
+        loop: false,
+        autoplay: true,
+        renderer: 'html', //渲染方式，有"html"、"canvas"和"svg"三种
+        container: document.getElementById('animation')
+      });
+      // bodymovin.loadAnimation({
+      //   wrapper: document.getElementById('wolf'),
+      //   animType: 'svg',
+      //   loop: true,
+      //   path: 'markus.json' //json文件路径
+      // });
+      //bodymovin.js的完整api文档见GitHub项目首页(https://github.com/bodymovin/bodymovin)
+    </script>
+  </body>
+</html>
