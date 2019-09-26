@@ -1,6 +1,6 @@
 <template>
-	<div class="model">
-		model
+	<div id="model">
+		mode
 	</div>
 </template>
 
@@ -12,6 +12,12 @@ export default {
 
 		}
 	},
+	created() {
+
+	},
+	mounted() {
+
+	},
 	methods: {
 
 	}
@@ -20,6 +26,6 @@ export default {
 
 <style scoped>
 .model {
-	background-color: red;
+
 }
 </style>
